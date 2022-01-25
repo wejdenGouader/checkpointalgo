@@ -1,0 +1,26 @@
+ALGORITHM sentence
+VAR
+    NBC: INTEGER:=0;
+    NBW: INTEGER:=0;
+    NBV: INTEGER:=0;
+    stc: CHAR:='';
+BEGIN
+    WHILE (stcv<> '.') DO
+        read (stc)
+        NBC:=nbc+1
+        IF (stc=' ') THEN
+            NBW:=+1
+        END_IF
+        IF (majus (stc) in ['A','E','I','U','O','Y']) THEN
+        NBV:=NBC+1
+            
+        END_IF
+    END_WHILE
+    write (NBC)
+    write (NBV)
+    IF (NBC <>0) THEN
+        write (nbw+1)
+        ELSE
+           write (NBW) 
+    END_IF
+END
